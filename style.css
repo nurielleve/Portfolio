@@ -1,0 +1,148 @@
+body {
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: "head main"
+    "nav main";
+    grid-gap: 5px;
+    background-color: #14646C;
+    color: #FEFCFD;
+    font-family: "Fjalla One", sans-serif;
+    letter-spacing: 0.5px;
+}
+
+header {
+    grid-area: head;
+    place-self: center;
+    margin: 100px 20px 20px 20px;
+    max-width: 500px;
+} 
+
+nav {
+    grid-area: nav;
+    font-size: 18px;
+    font-family: "Fjalla One", sans-serif;
+    margin: 20px 0;
+    
+}
+
+a {
+    color: #FEFCFD;
+    text-decoration: none;
+}
+
+.navbar {
+    text-decoration: none;
+    text-transform: uppercase; 
+    margin: 8px 5px;
+    display: block;
+    letter-spacing: 0.8px;
+}
+
+
+main {
+    grid-area: main;
+    place-self: center;
+    margin: 100px 20px 20px 20px;
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+
+}
+
+h3 {
+    font-size: 20px;
+    color:#ffffff;
+}
+
+p {
+    font-size: 16px;
+    padding: 5px;
+    font-family: "Source Sans 3", serif;
+    letter-spacing: 0.3px;
+}
+
+i {
+    font-size: 22px;
+    padding: 0 5px;
+}
+
+span {
+    border-radius: 20px;
+    padding: 5px 20px;
+    background-color: #1C8C97;
+    color: #FEFCFD;
+}
+
+img {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.project {
+    padding: 20px 0px;
+    border-radius: 5%;
+}
+
+.container1 {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+
+.technologies {
+    margin-top: 20px;
+}
+
+.summary {
+    margin: 10px;
+}
+
+.horizontal_line {
+    width: 90%;
+    height: 5px;
+    border-top: 5px dotted #FEFCFD;
+    line-height: 80%;
+}
+
+.navbar:hover {
+    color: #FF8C41;
+}
+
+i:hover {
+    color: #FF8C41;
+}
+
+.project:hover {
+    /*background-color: #51979F;*/
+    box-shadow: 12px 12px 3px #51979F;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        grid-template-areas: "head"
+        "nav"
+        "main";
+    }
+    .navbar {
+        display: inline;
+        margin: 0 10px;
+        
+    }
+    header {
+        margin-bottom: 0px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px){
+}
